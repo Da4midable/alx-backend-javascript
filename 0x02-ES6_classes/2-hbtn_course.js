@@ -1,4 +1,4 @@
-class HolbertonCourse {
+export default class HolbertonCourse {
   constructor(name, length, students) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
@@ -47,22 +47,4 @@ class HolbertonCourse {
     }
     this._students = newStudents;
   }
-}
-
-// Usage example
-const c1 = new HolbertonCourse('ES6', 1, ['Bob', 'Jane']);
-console.log(c1.name); // ES6
-c1.name = 'Python 101';
-console.log(c1); // HolbertonCourse { _name: 'Python 101', _length: 1, _students: [ 'Bob', 'Jane' ] }
-
-try {
-  c1.name = 12; // This will throw a TypeError
-} catch (err) {
-  console.log(err); // TypeError: Name must be a string
-}
-
-try {
-  const c2 = new HolbertonCourse('ES6', '1', ['Bob', 'Jane']); // This will throw a TypeError
-} catch (err) {
-  console.log(err); // TypeError: Length must be a number
 }
