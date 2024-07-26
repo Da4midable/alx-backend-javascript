@@ -17,7 +17,7 @@ const class2019 = new HolbertonClass(2019, 'San Francisco');
 const class2020 = new HolbertonClass(2020, 'San Francisco');
 
 export class StudentHolberton {
-  constructor(firstName, lastName, holbertonClass) {
+  constructor(firstName, lastName, holbertonClass = new HolbertonClass(1234, 'Some State')) {
     this._firstName = firstName;
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
