@@ -6,3 +6,8 @@ console.log(map);
 
 updateUniqueItems(map)
 console.log(map);
+
+let arr = [1, 2, 3, 4, 5];
+
+updateUniqueItems(arr)
+console.log(arr);
