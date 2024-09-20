@@ -1,0 +1,20 @@
+{
+  "name": "unittest",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "0x06. Unittests in JS\\n",
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register test/**.spec.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.19",
+    "@types/mocha": "^10.0.8",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
